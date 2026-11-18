@@ -7,7 +7,7 @@ Website tĩnh (HTML, CSS, JavaScript). **Không cần cài đặt**, không cầ
 1. Đăng nhập GitHub → **New repository** (ví dụ `tay-son-hoi-chien`). Chọn **Public**.
 2. Giải nén file ZIP, upload **tất cả file trong thư mục** lên nhánh `main` ở **thư mục gốc** của repository, đặc biệt là `index.html`, `style.css`, `app.js`, `data.js`.
 3. Vào **Settings → Pages → Build and deployment → Deploy from a branch**; chọn **main** và **/(root)** rồi **Save**.
-4. Trang sẽ có địa chỉ dạng `https://TEN-TAI-KHOAN.github.io/tay-son-hoi-chien/`.
+4. Trang sẽ có địa chỉ dạng https://maivuhailong.github.io/taysonhoichien/
 
 ## Chỉnh nội dung
 
