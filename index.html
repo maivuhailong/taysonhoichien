@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11191b" />
+  <meta name="description" content="Thư viện hồ sơ nhân vật dự án Tây Sơn Hồi Chiến — tìm hiểu nhân vật lịch sử và hình tượng dân gian." />
+  <title>Hồ sơ nhân vật · Tây Sơn Hồi Chiến</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar wrap">
+      <a class="brand" href="#" aria-label="Tây Sơn Hồi Chiến — Trang chủ"><span class="brand-seal">TS</span><span>TÂY SƠN <b>HỒI CHIẾN</b></span></a>
+      <a class="top-link" href="#thu-vien">Thư viện <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Dự án lịch sử · 1788–1789</p>
+        <h1 id="hero-title">Dấu tích<br/><em>một thời</em> binh biến.</h1>
+        <p class="hero-description">Tìm hiểu những con người và hình tượng xuất hiện trong bộ thẻ <strong>Tây Sơn Hồi Chiến</strong> — từ những tướng lĩnh trong cuộc đại phá quân Thanh đến các nhân vật truyền thuyết Việt Nam.</p>
+        <a class="primary-cta" href="#thu-vien">Khám phá hồ sơ <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="ridge ridge-back"></div><div class="ridge ridge-front"></div><span class="vertical-text">Kỷ Dậu · 1789</span><div class="corner-mark">◈</div></div>
+    </section>
+
+    <section class="catalog wrap" id="thu-vien" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow">Kho tư liệu</p><h2 id="catalog-title">Hồ sơ nhân vật <span class="count" id="count-total">16</span></h2></div><span class="section-aside">Chọn một hồ sơ để khám phá</span></div>
+      <div class="toolbar">
+        <div class="filter-bar" role="group" aria-label="Lọc theo nhóm nhân vật">
+          <button class="filter active" data-filter="all" aria-pressed="true">Tất cả <small>16</small></button>
+          <button class="filter" data-filter="history" aria-pressed="false">Phe Tây Sơn <small>6</small></button>
+          <button class="filter" data-filter="opposition" aria-pressed="false">Phe đối lập <small>5</small></button>
+          <button class="filter" data-filter="folk" aria-pressed="false">Dân gian <small>5</small></button>
+        </div>
+        <label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Tìm theo tên, kỹ năng..." autocomplete="off" aria-label="Tìm hồ sơ nhân vật"/><kbd>/</kbd></label>
+      </div>
+      <div class="result-line" id="result-line" role="status" aria-live="polite">16 hồ sơ</div>
+      <div id="cards" class="cards"></div>
+      <p id="empty" class="empty" hidden>Không tìm thấy hồ sơ phù hợp. Thử từ khóa khác nhé.</p>
+    </section>
+
+    <section class="source-notice wrap" id="nguon"><span class="notice-symbol">✳</span><div><h2>Về nguồn tư liệu</h2><p>Nội dung được biên soạn từ tài liệu làm việc <i>Tây Sơn Hồi Chiến (3).docx</i> của nhóm. Website giữ cách phân chia <strong>Sử liệu · Vai trò trong chiến dịch · Giai thoại · Tưởng niệm / thờ tự</strong> theo hồ sơ gốc. Các nhân vật dân gian thuộc truyền thuyết Việt Nam, <strong>không phải người tham chiến năm 1789</strong>. Những chi tiết đang có tranh luận hoặc chưa có nguồn chính xác trong bản nhóm cần tiếp tục được kiểm chứng trước khi coi là thông tin lịch sử xác nhận.</p></div></section>
+  </main>
+
+  <footer class="footer wrap"><span>© Tây Sơn Hồi Chiến · Dự án học tập</span><a href="#">Lên đầu trang ↑</a></footer>
+
+  <dialog id="profile-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <div class="dialog-top"><span class="dialog-kicker">HỒ SƠ NHÂN VẬT</span><button id="close-dialog" class="close-dialog" aria-label="Đóng hồ sơ">×</button></div>
+      <div id="dialog-body"></div>
+    </div>
+  </dialog>
+</body>
+</html>
